@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #f3eae3;
+}
+
+@media(max-width: 600px) {
+    .parent {
+        flex-direction: column ;
+        width: 350px !important;
+        height: 650px;
+        margin: auto;
+    }
+
+    .img-div {
+        width:  100% !important;
+        height: 50% !important;
+        background-size: 350px !important;
+    }
+
+    .details {
+        height: 55%;
+    }
+
+    .details h2 {
+        width: 250px !important;
+    }
+
+    .details :nth-child(3) {
+        width: 315px !important;
+    }
+}
+
+
+
+.parent {
+    display: flex;
+    width: 600px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.parent .img-div {
+    width:  50%;
+    background: url(./image-product-desktop.jpg) no-repeat center;
+    background-size: 300px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.details .p-1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.details h2 {
+    text-transform: capitalize;
+    width: 200px;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+}
+
+.details :nth-child(3) {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 1px;
+    width: 225px;
+}
+
+.details a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%) ;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.details * {
+    margin: 2px 0;
+}
+
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.prices :first-child {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+} 
+
+.prices :last-child {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+} 
+
+/* Framework */
+
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
